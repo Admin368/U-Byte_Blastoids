@@ -1,5 +1,5 @@
-obj/
-bin/
+/obj/*
+/bin/*
 Blastoids_Git.cbp
 main.c
 allegro.log
