@@ -4,7 +4,9 @@
 Allegro_MainSite:https://liballeg.org/  
 Allegro_Documentation:https://www.allegro.cc/manual/5/  
 Allegro_Github_Repository:https://github.com/liballeg/allegro5  
-
+  
+0. Download Game Code that Uses Allegro  
+  
 #QUICK INSTALL TO ALLEGRO with CodeBlocks  
 1. Download Allegro 5.2.2  
    - https://github.com/liballeg/allegro5/releases/download/5.2.2.0/allegro-5.2.2.zip
