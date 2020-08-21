@@ -1,3 +1,4 @@
-
+obj/
+bin/
 Blastoids_Git.cbp
 main.c
