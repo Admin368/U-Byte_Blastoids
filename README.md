@@ -20,11 +20,13 @@ Allegro_Github_Repository: https://github.com/liballeg/allegro5
 2. Extract the Allegro Files To MinGW :
    - Copy "bin" , "inclde" and "lib" folders  
    - Paste To your installation of MinGW.  
-     - commonly its located in C:\MinGW  
-     - or in you CodeBlocks Folder "C:\Program Files (x86)\CodeBlocks\MinGW".  
+     - Commonly its located in C:\MinGW  
+     - Or in you CodeBlocks Folder "C:\Program Files (x86)\CodeBlocks\MinGW".  
   
 3. Add Linkers to your codeblocks Blastoids Project  
-   - after making a project and the blastoids.c file to the project 
+   - Extract The Game files
+   - Make a fresh CodeBlock Project in the Game files folder
+   - after making the project add the blastoids.c file to the project 
    - click "Project" on the top MenuBar  
    - select  "Build Options"<br/>
      - While onTheLeftSide "Blastoids" is selected  
