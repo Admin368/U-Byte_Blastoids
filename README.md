@@ -1,4 +1,4 @@
-ALL THESE LINK IN DESCRIPTION  
+ALL THE LINKS IN DESCRIPTION  
 
 0. Download Game Code that Uses Allegro  
 
