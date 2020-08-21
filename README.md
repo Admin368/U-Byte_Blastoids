@@ -40,7 +40,8 @@ Allegro_Github_Repository: https://github.com/liballeg/allegro5
          - and find file "liballegro_monolith-debug.dll.a"  
      - While onTheLeftSide "Release" is selected  
          - do the same as above step  
-         - and find file "liballegro_monolith.dll.a"  
- !MAKE SURE ALL GAME FILES ARE IN CODE BLOCKS PROJECT FOLDER
- YOU ARE DONE, YOU CAN TEST BUILD THE PROJECT.  
+         - and find file "liballegro_monolith.dll.a" 
+         
+MAKE SURE ALL GAME FILES ARE IN CODE BLOCKS PROJECT FOLDER!  
+YOU ARE DONE, YOU CAN TEST BUILD THE PROJECT.    
 
