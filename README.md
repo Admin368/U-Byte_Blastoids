@@ -10,7 +10,7 @@ Allegro_Github_Repository: https://github.com/liballeg/allegro5
   
 
   
-#QUICK INSTALL TO ALLEGRO with CodeBlocks  
+#QUICK INSTALL AND CONFIGURATION OF ALLEGRO with CodeBlocks  
 Video of how to Configure https://youtu.be/pOfta63vDX4  
 1. Download Allegro 5.2.2  
    - https://www.allegro.cc/files/
