@@ -35,7 +35,7 @@ Allegro_Github_Repository: https://github.com/liballeg/allegro5
          - go in folder "lib"  
          - find file "liballegro_monolith-debug.dll.a"  
          - Eg. "C:\Program Files (x86)\CodeBlocks\MinGW\lib\liballegro_monolith-debug.dll.a"  
-     - While onTheLeftSide "Build" is selected  
+     - While onTheLeftSide "Debug" is selected  
          - do the same as above step  
          - and find file "liballegro_monolith-debug.dll.a"  
      - While onTheLeftSide "Release" is selected  
