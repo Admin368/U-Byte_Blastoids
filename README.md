@@ -3,9 +3,9 @@
 # [U-Byte]Blastoids_Git  
  U-Byte Version of The Classic Game Astroids Written in C and using Allegro Library.  
  
-Allegro_MainSite:https://liballeg.org/  
-Allegro_Documentation:https://www.allegro.cc/manual/5/  
-Allegro_Github_Repository:https://github.com/liballeg/allegro5  
+Allegro_MainSite: https://liballeg.org/  
+Allegro_Documentation: https://www.allegro.cc/manual/5/  
+Allegro_Github_Repository: https://github.com/liballeg/allegro5  
   
 
   
