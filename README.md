@@ -1,3 +1,5 @@
+0. Download Game Code that Uses Allegro  
+
 # [U-Byte]Blastoids_Git  
  U-Byte Version of The Classic Game Astroids Written in C and using Allegro Library.  
  
@@ -5,7 +7,7 @@ Allegro_MainSite:https://liballeg.org/
 Allegro_Documentation:https://www.allegro.cc/manual/5/  
 Allegro_Github_Repository:https://github.com/liballeg/allegro5  
   
-0. Download Game Code that Uses Allegro  
+
   
 #QUICK INSTALL TO ALLEGRO with CodeBlocks  
 1. Download Allegro 5.2.2  
