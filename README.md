@@ -19,7 +19,7 @@ Allegro_Github_Repository: https://github.com/liballeg/allegro5
   
 2. Extract the Allegro Files To MinGW :
    - Copy "bin" , "inclde" and "lib" folders  
-   - Pase To your installation of MinGW.  
+   - Paste To your installation of MinGW.  
      - commonly its located in C:\MinGW  
      - or in you CodeBlocks Folder "C:\Program Files (x86)\CodeBlocks\MinGW".  
   
