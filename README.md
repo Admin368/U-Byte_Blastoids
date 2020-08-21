@@ -13,10 +13,11 @@ Allegro_Github_Repository: https://github.com/liballeg/allegro5
   
 #QUICK INSTALL TO ALLEGRO with CodeBlocks  
 1. Download Allegro 5.2.2  
-   - https://github.com/liballeg/allegro5/releases/download/5.2.2.0/allegro-5.2.2.zip
+   - https://www.allegro.cc/files/
+   - direct_Link: http://cdn.allegro.cc/file/library/allegro/5.0.10/allegro-5.0.10-mingw-4.5.0.zip
   
 2. Extract the Allegro Files To MinGW :
-   - Copy "bin" , "inlcude" and "lib" folders  
+   - Copy "bin" , "inclde" and "lib" folders  
    - Pase To your installation of MinGW.  
      - commonly its located in C:\MinGW  
      - or in you CodeBlocks Folder "C:\Program Files (x86)\CodeBlocks\MinGW".  
