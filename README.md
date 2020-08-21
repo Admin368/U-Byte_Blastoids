@@ -1,14 +1,19 @@
 # [U-Byte]Blastoids_Git  
- U-Byte Version of The Classic Game Astroids using Allegro  
-  
+ U-Byte Version of The Classic Game Astroids Written in C and using Allegro Library.  
+ 
+Allegro_MainSite:https://liballeg.org/  
+Allegro_Documentation:https://www.allegro.cc/manual/5/  
+Allegro_Github_Repository:https://github.com/liballeg/allegro5  
+
 #QUICK INSTALL TO ALLEGRO with CodeBlocks  
 1. Download Allegro 5.2.2  
+   - https://github.com/liballeg/allegro5/releases/download/5.2.2.0/allegro-5.2.2.zip
   
-2. Extract the Files and copy the following:
-   - "bin" , "inlcude" and "lib" folders  
-   - To your installation of MinGW.  
-   - commonly its located in C:\MinGW  
-   - or in you CodeBlocks Folder "C:\Program Files (x86)\CodeBlocks\MinGW".  
+2. Extract the Allegro Files To MinGW :
+   - Copy "bin" , "inlcude" and "lib" folders  
+   - Pase To your installation of MinGW.  
+     - commonly its located in C:\MinGW  
+     - or in you CodeBlocks Folder "C:\Program Files (x86)\CodeBlocks\MinGW".  
   
 3. Add Linkers to your codeblocks Blastoids Project  
    - after making a project and the blastoids.c file to the project 
