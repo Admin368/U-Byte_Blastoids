@@ -1,9 +1,10 @@
 ALL THE LINKS IN DESCRIPTION  
 
-# [U-Byte]Blastoids_Git 
+# [U-Byte]Blastoids_Git
+ https://github.com/Admin368/U-Byte_Blastoids  
  U-Byte Version of The Classic Game Astroids Written in C and using Allegro Library.  
- https://github.com/Admin368/U-Byte_Blastoids
- 
+ > Video of how to Configure (with ALLEGRO) https://youtu.be/pOfta63vDX4  
+
 Allegro_MainSite: https://liballeg.org/  
 Allegro_Documentation: https://www.allegro.cc/manual/5/  
 Allegro_Github_Repository: https://github.com/liballeg/allegro5  
@@ -11,7 +12,6 @@ Allegro_Github_Repository: https://github.com/liballeg/allegro5
 
   
 #QUICK INSTALL AND CONFIGURATION OF ALLEGRO with CodeBlocks  
-Video of how to Configure https://youtu.be/pOfta63vDX4  
 1. Download Allegro  
    - https://www.allegro.cc/files/
    - direct_Link: http://cdn.allegro.cc/file/library/allegro/5.0.10/allegro-5.0.10-mingw-4.5.0.zip
