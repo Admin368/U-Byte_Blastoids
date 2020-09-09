@@ -21,3 +21,7 @@ Blastoids_Git.layout
 blasteroids -/obj/Debug/start_screen.o
 Blastoids_Git.layout
 blasteroids -/obj/Debug/start_screen.o
+blasteroids -/obj/Debug/single_player.o
+blasteroids -/obj/Debug/sky.o
+blasteroids -/obj/Debug/start_screen.o
+Blastoids_Git.layout
