@@ -7,6 +7,31 @@
 #include <allegro5/allegro_audio.h>
 #include <allegro5/allegro_acodec.h>
 #include <allegro5/allegro_image.h>
+//#include "common.c"
+
+//JOYSTICK_STUFF-START
+#define MAX_AXES     3
+#define MAX_STICKS   16
+#define MAX_BUTTONS  32
+int num_sticks = 0;
+int num_buttons = 0;
+int num_axes[MAX_STICKS] = { 0 };
+float joys[MAX_STICKS][MAX_AXES] = {{ 0 }};
+bool joys_buttons[MAX_BUTTONS] = { 0 };
+
+//int jkey= event.joystick.button;
+int jkey_a = 0;
+int jkey_b = 1;
+int jkey_x = 2;
+int jkey_y = 3;
+//JOYSTICK_STUFF-END
+
+
+//Joystick directions
+bool joyLeft = false;
+bool joyRight = false;
+bool joyUp = false;
+bool joyDown = false;
 
 long frames;
 long score;
@@ -107,6 +132,90 @@ void keyboard_update(ALLEGRO_EVENT* event)
     }
 }
 
+//JOYSTICK_FUNCTIONS-START
+void joystick_init(){
+    al_install_joystick();
+
+}
+
+static void setup_joystick_values(ALLEGRO_JOYSTICK *joy)
+{
+   ALLEGRO_JOYSTICK_STATE jst;
+   int i, j;
+
+   if (joy == NULL) {
+      num_sticks = 0;
+      num_buttons = 0;
+      return;
+   }
+
+   al_get_joystick_state(joy, &jst);
+
+   num_sticks = al_get_joystick_num_sticks(joy);
+   if (num_sticks > MAX_STICKS)
+      num_sticks = MAX_STICKS;
+   for (i = 0; i < num_sticks; i++) {
+      num_axes[i] = al_get_joystick_num_axes(joy, i);
+      for (j = 0; j < num_axes[i]; ++j)
+         joys[i][j] = jst.stick[i].axis[j];
+   }
+
+   num_buttons = al_get_joystick_num_buttons(joy);
+   if (num_buttons > MAX_BUTTONS) {
+      num_buttons = MAX_BUTTONS;
+   }
+   for (i = 0; i < num_buttons; i++) {
+      joys_buttons[i] = (jst.button[i] >= 16384);
+   }
+}
+
+void joystick_update(){
+    ALLEGRO_EVENT event;
+    switch (event.type) {
+         /* ALLEGRO_EVENT_JOYSTICK_AXIS - a joystick axis value changed.
+          */
+         case ALLEGRO_EVENT_JOYSTICK_AXIS:
+            if (event.joystick.stick < MAX_STICKS && event.joystick.axis < MAX_AXES) {
+               joys[event.joystick.stick][event.joystick.axis] = event.joystick.pos;
+            }
+            break;
+
+         /* ALLEGRO_EVENT_JOYSTICK_BUTTON_DOWN - a joystick button was pressed.
+          */
+         case ALLEGRO_EVENT_JOYSTICK_BUTTON_DOWN:
+            joys_buttons[event.joystick.button] = true;
+            break;
+
+         /* ALLEGRO_EVENT_JOYSTICK_BUTTON_UP - a joystick button was released.
+          */
+         case ALLEGRO_EVENT_JOYSTICK_BUTTON_UP:
+            joys_buttons[event.joystick.button] = false;
+            break;
+
+         case ALLEGRO_EVENT_KEY_DOWN:
+            if (event.keyboard.keycode == ALLEGRO_KEY_ESCAPE)
+               return;
+            break;
+
+         /* ALLEGRO_EVENT_DISPLAY_CLOSE - the window close button was pressed.
+          */
+         //case ALLEGRO_EVENT_DISPLAY_CLOSE:
+         //   return;
+
+         case ALLEGRO_EVENT_JOYSTICK_CONFIGURATION:
+            al_reconfigure_joysticks();
+            setup_joystick_values(al_get_joystick(0));
+            break;
+
+         /* We received an event of some type we don't know about.
+          * Just ignore it.
+          */
+         default:
+            break;
+    }
+}
+
+//JOYSTICK_FUNCTIONS-END
 #define SHIP_W 12
 #define SHIP_H 13
 
@@ -507,6 +616,7 @@ void ship_init()
 
 void ship_update()
 {
+    ALLEGRO_EVENT event;
     if(ship.lives < 0)
         return;
 
@@ -515,15 +625,20 @@ void ship_update()
         ship.respawn_timer--;
         return;
     }
-
-    if(key[ALLEGRO_KEY_LEFT])
+    if(key[ALLEGRO_KEY_LEFT] || joyLeft)
         ship.x -= SHIP_SPEED;
-    if(key[ALLEGRO_KEY_RIGHT])
+    if(key[ALLEGRO_KEY_RIGHT] || joyRight)
         ship.x += SHIP_SPEED;
-    if(key[ALLEGRO_KEY_UP])
+    if(key[ALLEGRO_KEY_UP] || joyUp)
         ship.y -= SHIP_SPEED;
-    if(key[ALLEGRO_KEY_DOWN])
+    if(key[ALLEGRO_KEY_DOWN] || joyDown)
         ship.y += SHIP_SPEED;
+    //joystick
+    //printf("Key = %d \n",event.joystick.button);
+
+
+
+
 
     if(ship.x < 0)
         ship.x = 0;
@@ -548,7 +663,7 @@ void ship_update()
             fx_add(false, x-2, y-4);
             fx_add(false, x+1, y-5);
 
-            ship.lives--;
+            //ship.lives--;
             ship.respawn_timer = 90;
             ship.invincible_timer = 180;
         }
@@ -875,6 +990,11 @@ int main()
     al_register_event_source(queue, al_get_display_event_source(disp));
     al_register_event_source(queue, al_get_timer_event_source(timer));
 
+    //JoyStick
+    al_install_joystick();
+    al_register_event_source(queue, al_get_joystick_event_source());
+    setup_joystick_values(al_get_joystick(0));
+
     keyboard_init();
     fx_init();
     shots_init();
@@ -888,11 +1008,11 @@ int main()
     bool done = false;
     bool redraw = true;
     ALLEGRO_EVENT event;
-
     al_start_timer(timer);
 
     while(1)
     {
+
         al_wait_for_event(queue, &event);
 
         switch(event.type)
@@ -919,9 +1039,92 @@ int main()
 
         if(done)
             break;
-
         keyboard_update(&event);
+        joystick_update(&event);
 
+
+        switch(event.joystick.axis){
+            case 0:
+                printf("Stick=%d Axis=0 pos%f\n",event.joystick.stick,event.joystick.pos);
+                break;
+            case 1:
+                printf("Stick=%d Axis=1 pos=%f\n",event.joystick.stick,event.joystick.pos);
+                break;
+            case 2:
+                printf("Axis=2\n");
+                break;
+            default:
+                break;
+        }
+
+        //printf("Jkey: %d \n",jkey);
+        switch(event.joystick.button){
+            case 0:
+                printf("Button 0[A]\n");
+                break;
+            case 1:
+                printf("Button 1[B]\n");
+                break;
+            case 2:
+                printf("Button 2[X]\n");
+                break;
+            case 3:
+                printf("Button 3[Y]\n");
+                break;
+        }
+    if(event.joystick.stick==0 && event.joystick.axis==0 && event.joystick.pos==0.000000){
+        if(event.joystick.button==jkey_x){//left
+            ship.x -= SHIP_SPEED;}
+        if(event.joystick.button==jkey_b){//right
+            ship.x += SHIP_SPEED;}
+        if(event.joystick.button==jkey_y){//up
+            ship.y -= SHIP_SPEED;}
+        if(event.joystick.button==jkey_a){//down
+            ship.y += SHIP_SPEED;}
+    }
+        //axis 0 = left=-1 & right=1
+        //axis 1 = up-1 & down=1
+    if(event.joystick.stick==0){
+        switch(event.joystick.axis){ //joyLeft,joyRight,joyUp,joyDown
+            case 0: //left or right
+
+                if(event.joystick.pos == 0)
+                {
+                    joyLeft = false;
+                    joyRight = false;
+                    //ship.x += SHIP_SPEED;
+                }
+                else if(event.joystick.pos > 0)
+                {
+                     joyRight = true;
+                }else if(event.joystick.pos < 0)
+                {
+                    joyLeft = true;
+                }
+                //if(event.joystick.pos==1){event.joystick.pos=0.7;}
+                //if(event.joystick.pos<-0){ship.x -= SHIP_SPEED;}//left=-1
+                //if(event.joystick.pos==-1){event.joystick.pos=-0.7;}
+                break;
+            case 1: //up or down
+                if(event.joystick.pos>0.5){ship.y += SHIP_SPEED;}//down=1
+                //if(event.joystick.pos==1){event.joystick.pos=0.7;}
+                if(event.joystick.pos<-0.5){ship.y -= SHIP_SPEED;}//up=-1
+                //if(event.joystick.pos==-1){event.joystick.pos=-0.7;}
+                break;
+        }
+    }
+    //if(ship.shot_timer){
+    //            ship.shot_timer--;
+    //}
+
+    if(event.joystick.stick==3){
+        if(event.joystick.pos>0){
+            int x = ship.x + (SHIP_W / 2);
+            if(shots_add(true, false, x, ship.y)){
+                ship.shot_timer = 5;
+            }
+        }
+    }
         if(redraw && al_is_event_queue_empty(queue))
         {
             disp_pre_draw();

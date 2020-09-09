@@ -11,3 +11,7 @@ blasteroids -/obj/Debug/score_board.o
 *.cbp
 blasteroids -/bin/Debug/blasteroids.exe
 blasteroids -/allegro.log
+blasteroids -/allegro.log
+blasteroids -/allegro.log
+blasteroids -/bin/Debug/blasteroids.exe
+blasteroids -/blasteroids.cbp
