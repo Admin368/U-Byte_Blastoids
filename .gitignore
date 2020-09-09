@@ -15,3 +15,9 @@ blasteroids -/allegro.log
 blasteroids -/allegro.log
 blasteroids -/bin/Debug/blasteroids.exe
 blasteroids -/blasteroids.cbp
+doxygen/doxyfile
+obj/Debug/Blastoids.o
+Blastoids_Git.layout
+blasteroids -/obj/Debug/start_screen.o
+Blastoids_Git.layout
+blasteroids -/obj/Debug/start_screen.o
