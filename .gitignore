@@ -1,8 +1,13 @@
-
-obj/Debug/Blastoids.o
-Blastoids_Git.cbp
-Blastoids_Git.depend
-bin/Debug/Blastoids_Git.exe
-bin/Debug/allegro.log
+bin/Debug/*
 allegro.log
 Blastoids_Backup.c
+blasteroids -/obj/Debug/start_screen.o
+blasteroids -/obj/Debug/sky.o
+blasteroids -/obj/Debug/single_player.o
+blasteroids -/obj/Debug/ship.o
+blasteroids -/obj/Debug/score_board.o
+*.layout
+*.depend
+*.cbp
+blasteroids -/bin/Debug/blasteroids.exe
+blasteroids -/allegro.log
