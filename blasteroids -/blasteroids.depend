@@ -1,0 +1,522 @@
+# depslib dependency file v1.0
+1597328352 source:f:\c-projects\c-games\blasteroids\hello.c
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_primitives.h>
+
+1281012045 e:\allegro\include\allegro5\allegro5.h
+	"allegro.h"
+
+1441921812 e:\allegro\include\allegro5\allegro.h
+	"allegro5/base.h"
+	"allegro5/altime.h"
+	"allegro5/bitmap.h"
+	"allegro5/bitmap_draw.h"
+	"allegro5/bitmap_io.h"
+	"allegro5/bitmap_lock.h"
+	"allegro5/blender.h"
+	"allegro5/clipboard.h"
+	"allegro5/color.h"
+	"allegro5/config.h"
+	"allegro5/cpu.h"
+	"allegro5/debug.h"
+	"allegro5/display.h"
+	"allegro5/drawing.h"
+	"allegro5/error.h"
+	"allegro5/events.h"
+	"allegro5/file.h"
+	"allegro5/fixed.h"
+	"allegro5/fmaths.h"
+	"allegro5/fshook.h"
+	"allegro5/fullscreen_mode.h"
+	"allegro5/haptic.h"
+	"allegro5/joystick.h"
+	"allegro5/keyboard.h"
+	"allegro5/memory.h"
+	"allegro5/monitor.h"
+	"allegro5/mouse.h"
+	"allegro5/mouse_cursor.h"
+	"allegro5/path.h"
+	"allegro5/render_state.h"
+	"allegro5/shader.h"
+	"allegro5/system.h"
+	"allegro5/threads.h"
+	"allegro5/timer.h"
+	"allegro5/tls.h"
+	"allegro5/touch_input.h"
+	"allegro5/transformations.h"
+	"allegro5/utf8.h"
+	"allegro5/alcompat.h"
+
+1481505627 e:\allegro\include\allegro5\base.h
+	<errno.h>
+	<limits.h>
+	<limits.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<sys/types.h>
+	<fortify/fortify.h>
+	<dmalloc.h>
+	"allegro5/internal/alconfig.h"
+
+1469641829 e:\allegro\include\allegro5\internal\alconfig.h
+	"allegro5/platform/alplatf.h"
+	"allegro5/platform/alwatcom.h"
+	"allegro5/platform/almngw32.h"
+	"allegro5/platform/albcc32.h"
+	"allegro5/platform/almsvc.h"
+	"allegro5/platform/aliphonecfg.h"
+	"allegro5/platform/alosxcfg.h"
+	"allegro5/platform/alandroidcfg.h"
+	"allegro5/platform/alraspberrypicfg.h"
+	"allegro5/platform/alucfg.h"
+	"allegro5/platform/allegro_sdl_config.h"
+	"allegro5/platform/astdint.h"
+	"allegro5/platform/astdbool.h"
+
+1481515577 e:\allegro\include\allegro5\platform\alplatf.h
+
+1468702395 e:\allegro\include\allegro5\platform\alwatcom.h
+	<io.h>
+	<i86.h>
+	<conio.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1365819268 e:\allegro\include\allegro5\platform\almngw32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1468702395 e:\allegro\include\allegro5\platform\albcc32.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+
+1468702395 e:\allegro\include\allegro5\platform\almsvc.h
+	<io.h>
+	<fcntl.h>
+	<direct.h>
+	<malloc.h>
+	"allegro5/platform/alplatf.h"
+
+1354191040 e:\allegro\include\allegro5\platform\aliphonecfg.h
+	<fcntl.h>
+	<unistd.h>
+
+1365819268 e:\allegro\include\allegro5\platform\alosxcfg.h
+	"allegro5/platform/alplatf.h"
+
+1324189852 e:\allegro\include\allegro5\platform\alandroidcfg.h
+
+1354191040 e:\allegro\include\allegro5\platform\alraspberrypicfg.h
+	<fcntl.h>
+	<unistd.h>
+	<sys/types.h>
+
+1365818594 e:\allegro\include\allegro5\platform\alucfg.h
+	<fcntl.h>
+	<unistd.h>
+	"alunix.h"
+	"allegro5/platform/alplatf.h"
+
+1266925320 e:\allegro\include\allegro5\platform\alunix.h
+
+1405880629 e:\allegro\include\allegro5\platform\allegro_sdl_config.h
+	<fcntl.h>
+	<unistd.h>
+
+1281012045 e:\allegro\include\allegro5\platform\astdint.h
+	<inttypes.h>
+	<stdint.h>
+
+1281012045 e:\allegro\include\allegro5\platform\astdbool.h
+	<stdbool.h>
+
+1285076981 e:\allegro\include\allegro5\altime.h
+	"allegro5/base.h"
+
+1469937462 e:\allegro\include\allegro5\bitmap.h
+	"allegro5/color.h"
+
+1440810792 e:\allegro\include\allegro5\color.h
+	"allegro5/base.h"
+
+1354620434 e:\allegro\include\allegro5\bitmap_draw.h
+	"allegro5/bitmap.h"
+
+1443029817 e:\allegro\include\allegro5\bitmap_io.h
+	"allegro5/bitmap.h"
+	"allegro5/file.h"
+
+1419211222 e:\allegro\include\allegro5\file.h
+	"allegro5/base.h"
+	"allegro5/path.h"
+	"allegro5/utf8.h"
+
+1337492993 e:\allegro\include\allegro5\path.h
+	"allegro5/base.h"
+
+1337169289 e:\allegro\include\allegro5\utf8.h
+	"allegro5/base.h"
+
+1418623615 e:\allegro\include\allegro5\bitmap_lock.h
+	"allegro5/bitmap.h"
+
+1459716376 e:\allegro\include\allegro5\blender.h
+	"allegro5/base.h"
+	"allegro5/color.h"
+
+1441574420 e:\allegro\include\allegro5\clipboard.h
+	"allegro5/base.h"
+	"allegro5/display.h"
+	"allegro5/utf8.h"
+
+1469937462 e:\allegro\include\allegro5\display.h
+	"allegro5/bitmap.h"
+	"allegro5/color.h"
+	"allegro5/events.h"
+
+1455728992 e:\allegro\include\allegro5\events.h
+	"allegro5/altime.h"
+
+1351456157 e:\allegro\include\allegro5\config.h
+	"allegro5/file.h"
+
+1441921812 e:\allegro\include\allegro5\cpu.h
+	"allegro5/base.h"
+
+1351638189 e:\allegro\include\allegro5\debug.h
+	<assert.h>
+	"allegro5/base.h"
+
+1354620434 e:\allegro\include\allegro5\drawing.h
+	"allegro5/color.h"
+
+1281012045 e:\allegro\include\allegro5\error.h
+	"allegro5/base.h"
+
+1281012045 e:\allegro\include\allegro5\fixed.h
+	"allegro5/base.h"
+
+1281012045 e:\allegro\include\allegro5\fmaths.h
+	"allegro5/base.h"
+	"allegro5/fixed.h"
+	"allegro5/inline/fmaths.inl"
+
+1468702395 e:\allegro\include\allegro5\inline\fmaths.inl
+	"allegro5/error.h"
+
+1406018237 e:\allegro\include\allegro5\fshook.h
+	"allegro5/base.h"
+	"allegro5/file.h"
+	"allegro5/path.h"
+	<sys/types.h>
+
+1459716376 e:\allegro\include\allegro5\fullscreen_mode.h
+	"allegro5/base.h"
+
+1457207240 e:\allegro\include\allegro5\haptic.h
+	"allegro5/base.h"
+	"allegro5/display.h"
+	"allegro5/events.h"
+	"allegro5/joystick.h"
+	"allegro5/keyboard.h"
+	"allegro5/mouse.h"
+	"allegro5/touch_input.h"
+
+1354620434 e:\allegro\include\allegro5\joystick.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1354620434 e:\allegro\include\allegro5\keyboard.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+	"allegro5/keycodes.h"
+
+1374892601 e:\allegro\include\allegro5\keycodes.h
+
+1423030331 e:\allegro\include\allegro5\mouse.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1456086987 e:\allegro\include\allegro5\touch_input.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1459716376 e:\allegro\include\allegro5\memory.h
+	"allegro5/base.h"
+
+1459716376 e:\allegro\include\allegro5\monitor.h
+	"allegro5/base.h"
+
+1354620434 e:\allegro\include\allegro5\mouse_cursor.h
+	"allegro5/base.h"
+
+1459716376 e:\allegro\include\allegro5\render_state.h
+	"allegro5/base.h"
+
+1462125881 e:\allegro\include\allegro5\shader.h
+	"allegro5/base.h"
+	"allegro5/transformations.h"
+
+1427944064 e:\allegro\include\allegro5\transformations.h
+	"allegro5/display.h"
+
+1333148078 e:\allegro\include\allegro5\system.h
+	"allegro5/config.h"
+	"allegro5/path.h"
+
+1289087210 e:\allegro\include\allegro5\threads.h
+	"allegro5/altime.h"
+
+1459716376 e:\allegro\include\allegro5\timer.h
+	"allegro5/base.h"
+	"allegro5/events.h"
+
+1440996195 e:\allegro\include\allegro5\tls.h
+	"allegro5/base.h"
+
+1459113855 e:\allegro\include\allegro5\alcompat.h
+
+1469937462 e:\allegro\include\allegro5\allegro_font.h
+	"allegro5/allegro.h"
+
+1393645666 e:\allegro\include\allegro5\allegro_primitives.h
+	<allegro5/allegro.h>
+
+1597330691 source:f:\c-projects\c-games\blasteroids\input.c
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_primitives.h>
+
+1597331146 source:f:\c-projects\c-games\blasteroids\asteroid.c
+
+1597331160 source:f:\c-projects\c-games\blasteroids\blast.c
+
+1597331192 source:f:\c-projects\c-games\blasteroids\blasteroids.c
+
+1597332410 source:f:\c-projects\c-games\blasteroids\spaceship.c
+
+1600341710 source:f:\c-projects\c-games\blasteroids\game.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1455078707 e:\allegro\include\allegro5\allegro_audio.h
+	"allegro5/allegro.h"
+
+1281012045 e:\allegro\include\allegro5\allegro_acodec.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_audio.h"
+
+1459716376 e:\allegro\include\allegro5\allegro_image.h
+	"allegro5/base.h"
+
+1598227145 source:f:\c-projects\ref\allegro5-master\examples\ex_winfull.c
+	"allegro5/allegro.h"
+	"common.c"
+
+1598227145 f:\c-projects\ref\allegro5-master\examples\common.c
+	<stdio.h>
+	<stdarg.h>
+	"allegro5/allegro_android.h"
+	"allegro5/allegro_native_dialog.h"
+
+1456085617 e:\allegro\include\allegro5\allegro_native_dialog.h
+	"allegro5/allegro.h"
+
+1598227145 source:f:\c-projects\ref\allegro5-master\examples\ex_windows.c
+	"allegro5/allegro.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_image.h"
+	<stdlib.h>
+	<time.h>
+	"common.c"
+
+1598227145 source:f:\c-projects\ref\allegro5-master\examples\ex_window_maximized.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_native_dialog.h>
+	<allegro5/allegro_image.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_ttf.h>
+	"common.c"
+
+1329948386 e:\allegro\include\allegro5\allegro_ttf.h
+	"allegro5/allegro.h"
+	"allegro5/allegro_font.h"
+
+1598227145 source:f:\c-projects\ref\allegro5-master\examples\ex_video.c
+	<allegro5/allegro.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_video.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_primitives.h>
+	<stdio.h>
+	"common.c"
+
+1442804797 e:\allegro\include\allegro5\allegro_video.h
+	"allegro5/allegro5.h"
+	"allegro5/allegro_audio.h"
+
+1598355986 f:\c-projects\c-games\blasteroids\preparation.c
+	"header.c"
+
+1598299256 f:\c-projects\c-games\blasteroids\uitilities.c
+
+1598356132 f:\c-projects\c-games\blasteroids\blasts.c
+	"header.c"
+
+1598299453 f:\c-projects\c-games\blasteroids\shots.c
+
+1598298829 f:\c-projects\c-games\blasteroids\spaceship.c
+
+1598356048 f:\c-projects\c-games\blasteroids\aliens.c
+	"header.c"
+
+1598355602 f:\c-projects\c-games\blasteroids\background.c
+	"header.c"
+
+1598300153 source:f:\c-projects\c-games\blasteroids\preparation.c
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_image.h>
+	"uitilities.c"
+
+1598594013 f:\c-projects\c-games\blasteroids\header.c
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_image.h>
+
+1598595655 f:\c-projects\c-games\blasteroids\score_board.c
+
+1598594013 source:f:\c-projects\c-games\blasteroids\header.c
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_image.h>
+
+1598595145 f:\c-projects\c-games\blasteroids\global_variables_functions.c
+	<allegro5/allegro_font.h>
+
+1598595145 source:f:\c-projects\c-games\blasteroids\global_variables_functions.c
+	<allegro5/allegro_font.h>
+
+1598596013 source:f:\c-projects\c-games\blasteroids\score_board.c
+	"header_global.h"
+
+1598595606 f:\c-projects\c-games\blasteroids\header.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_image.h>
+
+1598595607 f:\c-projects\c-games\blasteroids\prototypes.h
+
+1600342064 f:\c-projects\c-games\blasteroids\header_global.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_image.h>
+
+1600340464 f:\c-projects\c-games\blasteroids\header_prototypes.h
+
+1600341278 source:f:\c-projects\c-games\blasteroids\global_functions.c
+	"header_global.h"
+
+1598604567 source:f:\c-projects\c-games\blasteroids\start_screen.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1598604525 source:f:\c-projects\c-games\blasteroids\aliens.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1600341552 source:f:\c-projects\c-games\blasteroids\ship.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1598608329 source:f:\c-projects\c-games\blasteroids\single_player.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1598603649 source:f:\c-projects\c-games\blasteroids\sky.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1598604525 source:f:\c-projects\c-games\blasteroids\self-contained\aliens.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1600342064 f:\c-projects\c-games\blasteroids\self-contained\header_global.h
+	<stdio.h>
+	<stdlib.h>
+	<allegro5/allegro5.h>
+	<allegro5/allegro_font.h>
+	<allegro5/allegro_primitives.h>
+	<allegro5/allegro_audio.h>
+	<allegro5/allegro_acodec.h>
+	<allegro5/allegro_image.h>
+
+1600340464 f:\c-projects\c-games\blasteroids\self-contained\header_prototypes.h
+
+1600341710 source:f:\c-projects\c-games\blasteroids\self-contained\game.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1600343231 source:f:\c-projects\c-games\blasteroids\self-contained\global_functions.c
+	"header_global.h"
+
+1598596013 source:f:\c-projects\c-games\blasteroids\self-contained\score_board.c
+	"header_global.h"
+
+1600341552 source:f:\c-projects\c-games\blasteroids\self-contained\ship.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1598608329 source:f:\c-projects\c-games\blasteroids\self-contained\single_player.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1598603649 source:f:\c-projects\c-games\blasteroids\self-contained\sky.c
+	"header_global.h"
+	"header_prototypes.h"
+
+1600343339 source:f:\c-projects\c-games\blasteroids\self-contained\start_screen.c
+	"header_global.h"
+	"header_prototypes.h"
+
